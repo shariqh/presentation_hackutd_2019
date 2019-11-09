@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Intro to APIs</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1 style="font-size: 105px">Intro to RESTful APIs</h1>
+					<h3>Cognizant</h3>
+					<p>
+						<small>Created by <a href="https://">Braydon Coyer</a> and <a href="https://shariq.dev">Shariq Hirani</a></small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>What is an API?</h2>
+						<p class="fragment">
+							It's not a beer.
+						</p>
+						<p class="fragment">
+							API stands for Application Programming Interface. It allows applications to communicate with each other.
+						</p>
+					</section>
+					<section>
+						<h2>Think of it as a menu in a restaurant</h2>
+					</section>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<h2>Why use an API?</h2>
+					<p class="fragment">
+						APIs allow the building of third party applications and the efficient sharing of data over the internet.
+					</p>
+				</section>
+				
+				<section>
+					<section>
+						<h2>What is REST?</h2>
+						<p class="fragment">
+							REST stands for representational state transfer. A client (the user) requests a resource (data) from the API using the REST protocol.
+						</p>
+					</section>
+					<section>
+						<img src="https://sites.psu.edu/annaarsiriy/files/2019/02/Screen-Shot-2019-02-10-at-2.31.08-PM-1p26wa2.png">
+					</section>
+					<section>
+						<h2>Types of Client Requests</h2>
+						<ul>
+							<li class="fragment">GET</li>
+							<li class="fragment">POST</li>
+							<li class="fragment">PATCH</li>
+							<li class="fragment">DELETE</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>How do I consume a Web API?</h2>
+					<p>
+						APIs can be consumed through user interfaces and backend applications.
+					</p>
+					<br>
+					<p>
+						Let's work through some examples!
+					</p>
+				</section>
+
+				<section>
+					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+						<h2>The End</h2>
+						<p>Any questions?</p>
+					</section>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
